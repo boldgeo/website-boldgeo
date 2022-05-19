@@ -17,6 +17,7 @@ const config = {
         paths: {
             // change below to your repo name
             base: dev ? "" : "/website-boldgeo",
+			assets: dev ? "" : "https://boldgeo.github.io/website-boldgeo"
         }
     }
 };
