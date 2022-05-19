@@ -1,7 +1,7 @@
 import adapter from "@sveltejs/adapter-static"; 
 // was "@sveltejs/adapter-auto"
 
-const dev = !process.env.ROLLUP_WATCH;;
+const dev = process.env.ROLLUP_WATCH;;
 
 /** @type {import(""@sveltejs/kit").Config} */
 const config = {
@@ -16,7 +16,7 @@ const config = {
 		},
         paths: {
             // change below to your repo name
-            base: dev ? "" : "/website-boldgeo",
+            base: ""
         }
     }
 };
