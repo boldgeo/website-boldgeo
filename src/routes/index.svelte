@@ -1,60 +1,77 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
-	import Counter from '$lib/Counter.svelte';
+	const projects = [
+		{ img: '1', link: 'https://incora-flaeche.de/' },
+		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
+		{
+			name: 'Nigeria Rural Electrification Plans',
+			img: '3',
+			link: 'http://rrep-nigeria.integration.org/'
+		},
+		{ name: 'Magic Mapping Club', img: '4', link: 'https://magicmapping.club/' }
+	];
+
+	const clients = [
+		{ name: 'ARCH+' },
+		{ name: 'Asian Development Bank' },
+		{ name: 'Bill and Melinda Gates Foundation' },
+		{ name: 'Berliner Morgenpost' },
+		{ name: 'Brand Eins' },
+		{ name: 'DAAD' },
+		{ name: 'DataWrapper' },
+		{ name: 'Deutsche Welle' },
+		{ name: 'Die Tageszeitung' },
+		{ name: 'GIZ' },
+		{ name: 'Goethe-Institut' },
+		{ name: 'Technologiestiftung Berlin' },
+		{ name: 'WWF' },
+		{ name: 'Zeit Online' }
+	];
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Bold Geo</title>
+	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+<section id="work" class="p-5 sm:p-12">
+	<p class="text-xl">
+		We turn your geo data into inuitive visualisations and user fiendly experiences.
+	</p>
 
-		to your new<br />SvelteKit app
-	</h1>
+	<div class="flex flex-wrap mb-4">
+		{#each projects as p, i}
+			<a
+				target="_blank"
+				class="w-full sm:w-1/2 opacity-75 hover:opacity-100 ease-in duration-300"
+				href={p.link}
+			>
+				<img src="img/{p.img}.png" alt="Project 1" />
+			</a>
+		{/each}
+	</div>
+</section>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+<section id="clients" class="p-5 sm:p-12">
+	<h1 class="text-2xl mb-2">Our clients</h1>
+	<p>
+		We are working with a range of clients from the public, private and non-profit sector to make
+		their geo data stand out.
+	</p>
 
-	<Counter />
+	<ul class="list-disc sm:columns-2 mt-4 list-inside p-2">
+		{#each clients as c, i}
+			<li>{c.name}</li>
+		{/each}
+	</ul>
+</section>
+
+<section id="contact" class="p-5 lg:p-12">
+	<h1 class="text-2xl mb-2">Contact</h1>
+	<a href="mailto:info@boldgeo.de">info@boldgeo.de</a>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	#clients {
+		background-color: #f2f3f6;
 	}
 </style>
