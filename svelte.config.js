@@ -1,30 +1,28 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
-// was "@sveltejs/adapter-auto"
-
+// import adapter from '@sveltejs/adapter-auto';
+import adapter from "@sveltejs/adapter-static"; 
 const dev = process.env.NODE_ENV === 'development';
 
-/** @type {import(""@sveltejs/kit").Config} */
+
+console.log('dev??',dev);
+
+
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs'
-		}),
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		},
-		// paths: {
-		// 	// change below to your repo name
-		// 	base: dev ? '' : '/website-boldgeo'
-		// }
-		// ,
+        adapter: adapter({
+            pages: "docs",
+            assets: "docs",
+			fallback: null,
+			precompress: false
+        }),
 		prerender:{
 			default: true
-		}
+		},
+		paths: {
+			base: dev ? '' : '/website-boldgeo',
+		},
 	},
-
 	preprocess: [
 		preprocess({
 			postcss: true
@@ -33,4 +31,3 @@ const config = {
 };
 
 export default config;
-
