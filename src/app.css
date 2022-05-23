@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: 'Calibre';
-  src: url('Calibre-Regular.woff2') format('woff2'),
-    url('Calibre-Regular.woff') format('woff');
+  src: url('/fonts/Calibre-Regular.woff2') format('woff2'),
+    url('/fonts/Calibre-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: 'Calibre';
-  src: url('Calibre-Bold.woff2') format('woff2'),
-    url('Calibre-Bold.woff') format('woff');
+  src: url('/fonts/Calibre-Bold.woff2') format('woff2'),
+    url('/fonts/Calibre-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -24,8 +24,8 @@
 
 @font-face {
   font-family: 'Calibre';
-  src: url('Calibre-Black.woff2') format('woff2'),
-    url('Calibre-Black.woff') format('woff');
+  src: url('/fonts/Calibre-Black.woff2') format('woff2'),
+    url('/fonts/Calibre-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -33,8 +33,8 @@
 
 @font-face {
   font-family: 'Calibre';
-  src: url('Calibre-Light.woff2') format('woff2'),
-    url('Calibre-Light.woff') format('woff');
+  src: url('/fonts/Calibre-Light.woff2') format('woff2'),
+    url('/fonts/Calibre-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;

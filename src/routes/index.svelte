@@ -1,5 +1,7 @@
 <script>
 	import { base } from '$app/paths';
+	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	const projects = [
 		{ img: '1', link: 'https://incora-flaeche.de/' },
@@ -28,6 +30,14 @@
 		{ name: 'WWF' },
 		{ name: 'Zeit Online' }
 	];
+
+	let introVisible = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			introVisible = true;
+		}, 200);
+	});
 </script>
 
 <svelte:head>
@@ -35,10 +45,21 @@
 	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section id="work" class="p-5 sm:p-12">
-	<p class="text-xl">
-		We turn your geo data into intuitive visualisations and user-friendly experiences.
-	</p>
+<section id="work" class="p-5 sm:p-12 sm:pt-32">
+	{#if introVisible}
+		<p
+			class="text-xl leading-normal sm:text-6xl sm:leading-tight sm:pb-12"
+			transition:fly={{ y: 100, duration: 2000 }}
+		>
+			We turn your <span class="highlight">geo data</span> into intuitive
+			<span class="highlight">visualisations</span> and user-friendly experiences.
+		</p>
+	{:else}
+		<p class="text-xl leading-normal sm:text-6xl sm:leading-tight sm:pb-12">
+			We turn your <span class="highlight">geo data</span> into intuitive
+			<span class="highlight">visualisations</span> and user-friendly experiences.
+		</p>
+	{/if}
 
 	<div class="flex flex-wrap mb-4">
 		{#each projects as p, i}
@@ -47,33 +68,33 @@
 				class="w-full sm:w-1/2 hover:-translate-y-1 ease-in duration-300"
 				href={p.link}
 			>
-				<img src="{base}/img/{p.img}.png" alt="Project 1" />
+				<img src="{base}/img/{p.img}.png" alt="Bold Geo Project Thumbnail" />
 			</a>
 		{/each}
 	</div>
 </section>
 
-<section id="clients" class="p-5 sm:p-12">
-	<h1 class="text-2xl mb-2">Our clients</h1>
-	<p>
-		We are working with a range of clients from the public, private and non-profit sector to make
-		their geo data stand out.
+<section id="clients" class="p-5 sm:p-20">
+	<h1 class="text-2xl sm:text-4xl mb-5 font-bold">Our clients</h1>
+	<p class="sm:text-2xl mb-10">
+		We are collaborating with a range of clients from the public, private and non-profit sector to
+		make their geo data stand out.
 	</p>
 
-	<ul class="list-disc sm:columns-2 mt-4 list-inside p-2">
+	<ul class="list-disc sm:columns-2 mt-4 list-inside p-2 sm:text-2xl">
 		{#each clients as c, i}
 			<li>{c.name}</li>
 		{/each}
 	</ul>
 </section>
 
-<section id="contact" class="p-5 lg:p-12">
-	<h1 class="text-2xl mb-2">Contact</h1>
-	<a href="mailto:info@boldgeo.de">info@boldgeo.de</a>
-</section>
-
 <style>
 	#clients {
 		background-color: #f2f3f6;
+	}
+
+	.highlight {
+		/* background-color: yellow; */
+		text-decoration: underline;
 	}
 </style>
