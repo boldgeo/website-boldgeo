@@ -3,7 +3,7 @@
 
 	const projects = [
 		{ img: '1', link: 'https://incora-flaeche.de/' },
-		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'https://adb-myanmar.integration.org/' },
+		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
 		{
 			name: 'Nigeria Rural Electrification Plans',
 			img: '3',
@@ -44,7 +44,7 @@
 		{#each projects as p, i}
 			<a
 				target="_blank"
-				class="w-full sm:w-1/2 opacity-75 hover:opacity-100 ease-in duration-300"
+				class="w-full sm:w-1/2 hover:-translate-y-1 ease-in duration-300"
 				href={p.link}
 			>
 				<img src="{base}/img/{p.img}.png" alt="Project 1" />
