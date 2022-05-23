@@ -68,7 +68,11 @@
 				class="w-full sm:w-1/2 hover:-translate-y-1 ease-in duration-300"
 				href={p.link}
 			>
-				<img src="{base}/img/{p.img}.png" alt="Bold Geo Project Thumbnail" />
+				<img
+					src="{base}/img/{p.img}.png"
+					srcset="{base}/img/{p.img}.png 1x, {base}/img/{p.img}@2x.png 2x"
+					alt="Bold Geo Project Thumbnail"
+				/>
 			</a>
 		{/each}
 	</div>
