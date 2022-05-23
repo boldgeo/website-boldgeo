@@ -37,7 +37,7 @@
 
 <section id="work" class="p-5 sm:p-12">
 	<p class="text-xl">
-		We turn your geo data into inuitive visualisations and user fiendly experiences.
+		We turn your geo data into intuitive visualisations and user-friendly experiences.
 	</p>
 
 	<div class="flex flex-wrap mb-4">
