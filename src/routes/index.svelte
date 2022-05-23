@@ -72,6 +72,7 @@
 					src="{base}/img/{p.img}.png"
 					srcset="{base}/img/{p.img}.png 1x, {base}/img/{p.img}@2x.png 2x"
 					alt="Bold Geo Project Thumbnail"
+					class="m-auto"
 				/>
 			</a>
 		{/each}
