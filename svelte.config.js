@@ -20,7 +20,7 @@ const config = {
 			default: true
 		},
 		paths: {
-			base: dev ? '' : '/website-boldgeo',
+			// base: dev ? '' : '/website-boldgeo',
 		},
 	},
 	preprocess: [
