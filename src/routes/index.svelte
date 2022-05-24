@@ -52,7 +52,7 @@
 			transition:fly={{ y: 100, duration: 2000 }}
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
-			<span class="highlight">visualisations</span> and user-friendly experiences.
+			<span class="highlight">visualisations</span> and user-friendly web experiences.
 		</p>
 	{:else}
 		<p class="text-xl leading-normal sm:text-6xl sm:leading-tight sm:pb-12">
