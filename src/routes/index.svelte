@@ -49,6 +49,7 @@
 	{#if introVisible}
 		<p
 			class="text-xl leading-normal text-3xl sm:text-5xl md:text-6xl md:leading-tight md:pb-12 sm:p-8"
+			transition:fly|local={{ y: 200, duration: 2000 }}
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
 			<span class="highlight">visualisations</span> and user-friendly web experiences.
