@@ -1,4 +1,4 @@
-<footer id="contact" class="p-5 lg:p-20 bg-black text-white">
+<footer id="contact" class="p-5 sm:p-20 bg-black text-white">
 	<h1 class="text-2xl sm:text-4xl mb-5 font-bold">Contact</h1>
 	<div class="sm:text-xl">bold geo</div>
 	<div class="sm:text-xl">Hans Hack & Alsino Skowronnek</div>

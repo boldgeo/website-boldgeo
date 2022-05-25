@@ -45,11 +45,10 @@
 	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section id="work" class="p-5 sm:p-12 sm:pt-32">
+<section id="work" class="p-5 sm:p-12 pt-26">
 	{#if introVisible}
 		<p
-			class="text-xl leading-normal sm:text-6xl sm:leading-tight sm:pb-12"
-			transition:fly={{ y: 100, duration: 2000 }}
+			class="text-xl leading-normal text-3xl sm:text-5xl md:text-6xl md:leading-tight md:pb-12 sm:p-8"
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
 			<span class="highlight">visualisations</span> and user-friendly web experiences.
@@ -81,7 +80,7 @@
 
 <section id="clients" class="p-5 sm:p-20">
 	<h1 class="text-2xl sm:text-4xl mb-5 font-bold">Our clients</h1>
-	<p class="sm:text-2xl mb-10">
+	<p class="sm:text-2xl sm:mb-10">
 		We are collaborating with a range of clients from the public, private and non-profit sector to
 		make their geo data stand out.
 	</p>

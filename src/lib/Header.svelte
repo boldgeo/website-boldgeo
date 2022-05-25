@@ -1,5 +1,5 @@
 <header class="flex flex-wrap items-center justify-between p-5 sm:p-12 sm:pb-0">
-	<div class="w-1/2 flex flex-wrap mb-4 -space-y-1">
+	<div class="sm:w-1/2 flex flex-wrap mb-4 -space-y-1">
 		<h1 class="w-full text-6xl font-black">bold geo</h1>
 		<p class="w-full text-xl">experts for spatial data & visualisation</p>
 	</div>
