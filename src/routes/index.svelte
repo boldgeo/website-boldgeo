@@ -20,6 +20,7 @@
 		{ name: 'Bill and Melinda Gates Foundation' },
 		{ name: 'Berliner Morgenpost' },
 		{ name: 'Brand Eins' },
+		{ name: 'Bundesamt für Bauwesen und Raumordnung (BBR)' },
 		{ name: 'DAAD' },
 		{ name: 'DataWrapper' },
 		{ name: 'Deutsche Welle' },
