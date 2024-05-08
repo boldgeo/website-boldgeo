@@ -27,6 +27,7 @@
 		{ name: 'Die Tageszeitung' },
 		{ name: 'GIZ' },
 		{ name: 'Goethe-Institut' },
+		{ name: 'Institut für Landes- und Stadtentwicklungsforschung (ILS)' },
 		{ name: 'Technologiestiftung Berlin' },
 		{ name: 'WWF' },
 		{ name: 'Zeit Online' }
@@ -87,7 +88,7 @@
 		make their geo data stand out.
 	</p>
 
-	<ul class="list-disc sm:columns-2 mt-4 list-inside p-2 sm:text-2xl">
+	<ul class="list-none sm:columns-2 mt-4 list-inside p-2 sm:text-xl text-gray-500">
 		{#each clients as c, i}
 			<li>{c.name}</li>
 		{/each}
