@@ -12,6 +12,7 @@
 			img: '3',
 			link: 'http://rrep-nigeria.integration.org/'
 		},
+		{ name: 'Integration Environment and Energy', img: '6', link: 'https://integration.org/' },
 		{ name: 'Magic Mapping Club', img: '4', link: 'https://magicmapping.club/' }
 	];
 
