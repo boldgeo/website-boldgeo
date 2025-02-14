@@ -30,6 +30,8 @@
 		{ name: 'GIZ' },
 		{ name: 'Goethe-Institut' },
 		{ name: 'Institut für Landes- und Stadtentwicklungsforschung (ILS)' },
+		{ name: 'Integration Environment & Energy' },
+		{ name: 'Ruhr-Universität Bochum' },
 		{ name: 'Technologiestiftung Berlin' },
 		{ name: 'WWF' },
 		{ name: 'Zeit Online' }
