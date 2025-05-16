@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	const projects = [
-		{ name: 'Data2Resilience', img: '5', link: 'https://data2resilience.de/' },
+		{ name: 'Data2Resilience', img: '5', link: 'https://data-2-resilience.vercel.app/' },
 		{ name: 'Incora Fläche', img: '1', link: 'https://incora-flaeche.de/' },
 		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
 		{
