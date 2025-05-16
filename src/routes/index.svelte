@@ -6,6 +6,7 @@
 	const projects = [
 		{ name: 'Dortmund 3D Thermal Heatmap', img: '7', link: 'https://catch4d.de/3d-waermelandkarte/' },
 		{ name: 'Data2Resilience', img: '5', link: 'https://data-2-resilience.vercel.app/' },
+		{ name: 'GeoExplorer CityLab Berlin', img: '8', link: 'https://geoexplorer.odis-berlin.de/' },
 		{ name: 'Incora Fläche', img: '1', link: 'https://incora-flaeche.de/' },
 		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
 		{
