@@ -56,7 +56,7 @@
 <section id="work" class="p-5 sm:p-12 pt-26">
 	{#if introVisible}
 		<p
-			class="text-xl leading-normal text-3xl sm:text-5xl md:text-6xl md:leading-tight md:pb-12 sm:p-8"
+			class="text-xl leading-[1.3] text-3xl sm:text-5xl md:text-6xl md:leading-tight md:pb-12 sm:p-8"
 			transition:fly|local={{ y: 200, duration: 2000 }}
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
@@ -107,7 +107,6 @@
 	}
 
 	.highlight {
-		/* background-color: yellow; */
 		text-decoration: underline;
 	}
 </style>
