@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	const projects = [
-		{ name: 'Dortmund 3D Thermal Heatmap', img: '7', link: 'https://catch4d.de/3d-waermelandkarte/' },
+		{ name: 'Dortmund 3D Thermal Heatmap', img: '7', link: 'https://thermographic.catch4d.de/external/' },
 		{ name: 'Data2Resilience', img: '5', link: 'https://dashboard.data2resilience.de/' },
 		{ name: 'GeoExplorer CityLab Berlin', img: '8', link: 'https://geoexplorer.odis-berlin.de/' },
 		{ name: 'Incora Fläche', img: '1', link: 'https://incora-flaeche.de/' },
