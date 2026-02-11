@@ -15,9 +15,9 @@
 </script>
 
 <header class="px-5 py-8 sm:px-12 sm:py-10 flex flex-wrap items-center justify-between">
-	<div class="sm:w-1/2 flex flex-col gap-1 mb-4">
-		<h1 class="text-6xl font-black leading-none">bold geo</h1>
-		<p class="text-lg font-light text-gray-500">experts for spatial data & visualisation</p>
+	<div class="sm:w-1/2 flex flex-wrap -space-y-1 mb-4">
+		<h1 class="w-full text-6xl font-black">bold geo</h1>
+		<p class="w-full text-sm font-light tracking-wide text-gray-500">experts for spatial data & visualisation</p>
 	</div>
 
 	<nav class="flex flex-row items-center space-x-10 sm:space-x-16">

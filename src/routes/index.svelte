@@ -58,17 +58,17 @@
 	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section id="work" class="px-5 pt-16 pb-0 sm:px-12 sm:pt-24">
+<section id="work" class="px-5 pt-16 pb-6 sm:px-12 sm:pt-24 sm:pb-10">
 	{#if introVisible}
 		<p
-			class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:pb-12"
+			class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:p-8 md:pb-12"
 			transition:fly|local={{ y: 30, duration: 600 }}
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
 			<span class="highlight">visualisations</span> and user-friendly web experiences.
 		</p>
 	{:else}
-		<p class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:pb-12">
+		<p class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:p-8 md:pb-12">
 			We turn your <span class="highlight">geo data</span> into intuitive
 			<span class="highlight">visualisations</span> and user-friendly web experiences.
 		</p>
@@ -76,7 +76,7 @@
 
 	<div class="border-t border-gray-200" />
 
-	<div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 mt-0.5">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 mt-6 sm:mt-10">
 		{#each projects as p, i}
 			<a
 				target="_blank"
@@ -103,7 +103,7 @@
 		make their geo data stand out.
 	</p>
 
-	<ul class="list-none sm:columns-2 mt-4 list-inside sm:text-xl leading-relaxed text-gray-800">
+	<ul class="list-none sm:columns-2 mt-4 list-inside text-sm sm:text-base font-light tracking-wide leading-relaxed text-gray-800">
 		{#each clients as c}
 			<li>{c.name}</li>
 		{/each}
