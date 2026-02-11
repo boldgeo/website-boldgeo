@@ -6,6 +6,7 @@
 	const projects = [
 		{ name: 'Dortmund 3D Thermal Heatmap', img: '7', link: 'https://thermographic.catch4d.de/external/' },
 		{ name: 'Data2Resilience', img: '5', link: 'https://dashboard.data2resilience.de/' },
+		{ name: 'Digital Credentials Monitor', img: '9', link: 'https://digital-credentials-monitor.com//' },
 		{ name: 'GeoExplorer CityLab Berlin', img: '8', link: 'https://geoexplorer.odis-berlin.de/' },
 		{ name: 'Incora Fläche', img: '1', link: 'https://incora-flaeche.de/' },
 		{ name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
@@ -35,6 +36,7 @@
 		{ name: 'Integration Environment & Energy' },
 		{ name: 'Ruhr-Universität Bochum' },
 		{ name: 'Technologiestiftung Berlin' },
+		{ name: 'UNESCO' },
 		{ name: 'WWF' },
 		{ name: 'Zeit Online' }
 	];
