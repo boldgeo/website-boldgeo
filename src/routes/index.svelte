@@ -1,3 +1,5 @@
+<!-- ABOUTME: Main page — hero tagline, project grid, and clients section -->
+<!-- ABOUTME: Data arrays for projects and clients are defined here -->
 <script>
 	import { base } from '$app/paths';
 	import { fly } from 'svelte/transition';
@@ -42,6 +44,7 @@
 	];
 
 	let introVisible = false;
+	let hoveredIndex = null;
 
 	onMount(() => {
 		setTimeout(() => {
@@ -55,60 +58,54 @@
 	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section id="work" class="p-5 sm:p-12 pt-26">
+<section id="work" class="px-5 pt-16 pb-6 sm:px-12 sm:pt-24 sm:pb-10">
 	{#if introVisible}
 		<p
-			class="text-xl leading-[1.2] text-3xl sm:text-5xl md:text-6xl md:leading-tight md:pb-12 sm:p-8"
-			transition:fly|local={{ y: 200, duration: 2000 }}
+			class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:p-8 md:pb-12"
+			transition:fly|local={{ y: 30, duration: 600 }}
 		>
 			We turn your <span class="highlight">geo data</span> into intuitive
 			<span class="highlight">visualisations</span> and user-friendly web experiences.
 		</p>
 	{:else}
-		<p class="text-xl leading-normal sm:text-6xl sm:leading-tight sm:pb-12">
+		<p class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:p-8 md:pb-12">
 			We turn your <span class="highlight">geo data</span> into intuitive
-			<span class="highlight">visualisations</span> and user-friendly experiences.
+			<span class="highlight">visualisations</span> and user-friendly web experiences.
 		</p>
 	{/if}
 
-	<div class="flex flex-wrap mb-4">
+	<div class="border-t border-gray-200" />
+
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 mt-6 sm:mt-10">
 		{#each projects as p, i}
 			<a
 				target="_blank"
-				class="w-full sm:w-1/2 hover:-translate-y-1 ease-in duration-300"
+				class="ease-in duration-300 {hoveredIndex !== null && hoveredIndex !== i ? 'opacity-60' : ''} hover:-translate-y-1"
 				href={p.link}
+				on:mouseenter={() => hoveredIndex = i}
+				on:mouseleave={() => hoveredIndex = null}
 			>
 				<img
 					src="{base}/img/{p.img}.png"
 					srcset="{base}/img/{p.img}.png 1x, {base}/img/{p.img}@2x.png 2x"
 					alt="Bold Geo Project Thumbnail"
-					class="m-auto"
+					class="w-full block"
 				/>
 			</a>
 		{/each}
 	</div>
 </section>
 
-<section id="clients" class="p-5 sm:p-20">
-	<h1 class="text-2xl sm:text-4xl mb-5 font-bold">Our clients</h1>
-	<p class="sm:text-2xl sm:mb-10">
+<section id="clients" class="px-5 py-16 sm:px-12 sm:py-24 border-t border-gray-200">
+	<p class="section-label">Our clients</p>
+	<p class="text-2xl font-light sm:text-3xl mb-8 text-gray-700">
 		We are collaborating with a range of clients from the public, private and non-profit sector to
 		make their geo data stand out.
 	</p>
 
-	<ul class="list-none sm:columns-2 mt-4 list-inside p-2 sm:text-xl text-gray-500">
-		{#each clients as c, i}
+	<ul class="list-none sm:columns-2 mt-4 list-inside text-sm sm:text-base font-light tracking-wide leading-relaxed text-gray-800">
+		{#each clients as c}
 			<li>{c.name}</li>
 		{/each}
 	</ul>
 </section>
-
-<style>
-	#clients {
-		background-color: #f2f3f6;
-	}
-
-	.highlight {
-		text-decoration: underline;
-	}
-</style>
