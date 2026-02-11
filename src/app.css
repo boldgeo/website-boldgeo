@@ -44,3 +44,18 @@
 body, html {
   font-family: 'Calibre', Arial, Helvetica, sans-serif;
 }
+
+.highlight {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
