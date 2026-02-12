@@ -21,21 +21,21 @@
 	</div>
 
 	<nav class="flex flex-row items-center space-x-10 sm:space-x-16">
-		<a class="text-base font-light tracking-wide nav-link" href="#services">services</a>
-		<a class="text-base font-light tracking-wide nav-link" href="#work">work</a>
-		<a class="text-base font-light tracking-wide nav-link" href="#clients">clients</a>
-		<a class="text-base font-light tracking-wide nav-link" href="#contact">contact</a>
+		<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#services">services</a>
+		<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#work">work</a>
+		<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#clients">clients</a>
+		<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#contact">contact</a>
 	</nav>
 </header>
 
 <div class="sticky-header {isScrolled ? 'visible' : ''}">
 	<div class="inner">
-		<span class="text-2xl font-black">bold geo</span>
-		<nav class="flex flex-row items-center space-x-10">
-			<a class="text-base font-light tracking-wide nav-link" href="#services">services</a>
-			<a class="text-base font-light tracking-wide nav-link" href="#work">work</a>
-			<a class="text-base font-light tracking-wide nav-link" href="#clients">clients</a>
-			<a class="text-base font-light tracking-wide nav-link" href="#contact">contact</a>
+		<span class="text-xl sm:text-2xl font-black whitespace-nowrap">bold geo</span>
+		<nav class="flex flex-row items-center space-x-4 sm:space-x-10">
+			<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#services">services</a>
+			<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#work">work</a>
+			<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#clients">clients</a>
+			<a class="text-sm sm:text-base font-light tracking-wide nav-link" href="#contact">contact</a>
 		</nav>
 	</div>
 </div>
