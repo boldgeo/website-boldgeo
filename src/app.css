@@ -43,6 +43,7 @@
 
 body, html {
   font-family: 'Calibre', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .highlight {

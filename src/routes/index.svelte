@@ -53,7 +53,7 @@
 	<meta name="description" content="Bold Geo" />
 </svelte:head>
 
-<section id="work" class="px-5 pt-16 pb-6 sm:px-12 sm:pt-24 sm:pb-10">
+<section class="px-5 pt-16 pb-6 sm:px-12 sm:pt-24 sm:pb-10">
 	{#if introVisible}
 		<p
 			class="text-3xl font-light leading-snug sm:text-5xl md:text-6xl md:leading-tight pb-8 sm:p-8 md:pb-12"
