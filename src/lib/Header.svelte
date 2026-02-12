@@ -17,23 +17,25 @@
 <header class="px-5 py-8 sm:px-12 sm:py-10 flex flex-wrap items-center justify-between">
 	<div class="sm:w-1/2 flex flex-wrap -space-y-1 mb-4">
 		<h1 class="w-full text-6xl font-black">bold geo</h1>
-		<p class="w-full text-sm font-light tracking-wide text-gray-500">experts for spatial data & visualisation</p>
+		<p class="w-full text-base font-light tracking-wide text-gray-500">experts for spatial data & visualisation</p>
 	</div>
 
 	<nav class="flex flex-row items-center space-x-10 sm:space-x-16">
-		<a class="text-base sm:text-xl nav-link" href="#work">work</a>
-		<a class="text-base sm:text-xl nav-link" href="#clients">clients</a>
-		<a class="text-base sm:text-xl nav-link" href="#contact">contact</a>
+		<a class="text-base font-light tracking-wide nav-link" href="#services">services</a>
+		<a class="text-base font-light tracking-wide nav-link" href="#work">work</a>
+		<a class="text-base font-light tracking-wide nav-link" href="#clients">clients</a>
+		<a class="text-base font-light tracking-wide nav-link" href="#contact">contact</a>
 	</nav>
 </header>
 
 <div class="sticky-header {isScrolled ? 'visible' : ''}">
 	<div class="inner">
-		<span class="text-lg font-black">bold geo</span>
+		<span class="text-2xl font-black">bold geo</span>
 		<nav class="flex flex-row items-center space-x-10">
-			<a class="text-sm nav-link" href="#work">work</a>
-			<a class="text-sm nav-link" href="#clients">clients</a>
-			<a class="text-sm nav-link" href="#contact">contact</a>
+			<a class="text-base font-light tracking-wide nav-link" href="#services">services</a>
+			<a class="text-base font-light tracking-wide nav-link" href="#work">work</a>
+			<a class="text-base font-light tracking-wide nav-link" href="#clients">clients</a>
+			<a class="text-base font-light tracking-wide nav-link" href="#contact">contact</a>
 		</nav>
 	</div>
 </div>
