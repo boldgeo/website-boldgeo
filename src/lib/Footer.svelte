@@ -5,9 +5,9 @@
 	<div class="text-base font-light tracking-wide leading-relaxed text-gray-300">
 		<div>bold geo</div>
 		<div>Alsino Skowronnek</div>
-		<div>Seumestrasse 8</div>
-		<div>10245 Berlin</div>
-		<div>Germany</div>
+		<div>Carrer de Llull, 63-69</div>
+		<div>08005 Barcelona</div>
+		<div>Spain</div>
 	</div>
 	<div class="pt-10">
 		<a class="text-base font-light tracking-wide email-link" href="mailto:info@boldgeo.de">info@boldgeo.de</a>

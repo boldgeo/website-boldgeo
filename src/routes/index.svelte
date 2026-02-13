@@ -75,7 +75,7 @@
 <section id="services" class="px-5 py-16 sm:px-12 sm:py-24 border-b border-gray-200">
 	<p class="section-label mb-3">Services</p>
 	<p class="text-lg sm:text-xl font-light leading-relaxed text-gray-700 mb-10 max-w-3xl">
-		Bold Geo is a Berlin-based studio for spatial data and visualisation. We help organisations in
+		Bold Geo is a Barcelona-based studio for spatial data and visualisation. We help organisations in
 		the public, private and non-profit sector turn complex geographic data into clear, interactive
 		tools — from early-stage data strategy to fully deployed web applications.
 	</p>
