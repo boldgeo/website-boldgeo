@@ -13,7 +13,8 @@
 		{ client: 'BBSR', name: 'Incora Flächeninfo Dashboard', img: '1', link: 'https://incora-flaeche.de/' },
 		{ client: 'Integration Environment & Energy', name: 'Myanmar Off-grid Analytics', img: '2', link: 'http://adb-myanmar.integration.org/' },
 		{ client: 'Integration Environment & Energy', name: 'Nigeria Rural Electrification Plans', img: '3', link: 'http://rrep-nigeria.integration.org/' },
-		{ client: 'Integration Environment & Energy', name: 'Website Project Locator', img: '6', link: 'https://integration.org/' }
+		{ client: 'Integration Environment & Energy', name: 'Website Project Locator', img: '6', link: 'https://integration.org/' },
+		{ client: 'Uncomissioned', name: 'VisitMyOrbit (Map & Network Artist Visualization)', img: '10', link: 'https://visitmyorbit.vercel.app/' }
 	];
 
 	const clients = [
