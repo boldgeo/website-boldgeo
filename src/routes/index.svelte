@@ -76,9 +76,9 @@
 <section id="services" class="px-5 py-16 sm:px-12 sm:py-24 border-b border-gray-200">
 	<p class="section-label mb-3">Services</p>
 	<p class="text-lg sm:text-xl font-light leading-relaxed text-gray-700 mb-10 max-w-3xl">
-		Bold Geo is a Barcelona-based studio for spatial data and visualisation. We help organisations in
+		Bold Geo is a Barcelona-based studio for spatial data, visualisation and AI. We help organisations in
 		the public, private and non-profit sector turn complex geographic data into clear, interactive
-		tools — from early-stage data strategy to fully deployed web applications.
+		tools — from early-stage data strategy to fully deployed web applications and intelligent agents.
 	</p>
 
 	<ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 max-w-3xl">
@@ -105,6 +105,10 @@
 		<li>
 			<span class="block text-base font-medium">Training & Workshops</span>
 			<span class="block text-base font-light text-gray-500">Teaching teams to work with spatial data and visualisation tools</span>
+		</li>
+		<li>
+			<span class="block text-base font-medium">AI & Geo Agents</span>
+			<span class="block text-base font-light text-gray-500">Building intelligent tools that automate spatial data workflows</span>
 		</li>
 	</ul>
 </section>
@@ -135,7 +139,7 @@
 
 <section id="clients" class="px-5 py-16 sm:px-12 sm:py-24 border-t border-gray-200">
 	<p class="section-label mb-3">Our clients</p>
-	<p class="text-2xl font-light sm:text-3xl mb-8 text-gray-700">
+	<p class="text-2xl font-light sm:text-3xl mb-8 text-gray-700 max-w-3xl">
 		We are collaborating with a range of clients from the public, private and non-profit sector to
 		make their geo data stand out.
 	</p>
