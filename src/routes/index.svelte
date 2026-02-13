@@ -96,7 +96,7 @@
 		</li>
 		<li>
 			<span class="block text-base font-medium">Consulting & Strategy</span>
-			<span class="block text-base font-light text-gray-500">Advising on how to collect, manage and communicate geo data</span>
+			<span class="block text-base font-light text-gray-500">Collecting, managing and communicating geo data</span>
 		</li>
 		<li>
 			<span class="block text-base font-medium">Product Development</span>
